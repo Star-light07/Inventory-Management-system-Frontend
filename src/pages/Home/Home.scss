@@ -1,0 +1,108 @@
+.home {
+  background-color: #02001a;
+  min-height: 100vh;
+  padding-left: 25px;
+  padding-top: 1.5rem;
+  //text-align: center;
+
+  & nav {
+    padding-top: 0.05rem;
+    padding-bottom: 1.8rem;
+    color: rgb(235, 77, 77);
+  }
+}
+
+.home-links {
+  display: flex;
+  justify-content: right;
+  margin-top: 0.01rem;
+  margin-right: 5rem;
+  text-decoration: none;
+
+  & > .logo {
+    padding-top: 0.6rem;
+    padding-right: 64rem;
+    color: #fff;
+  }
+
+  & .navbar {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: rgb(83, 202, 4);
+    padding-right: 25px;
+
+    & button.navbar {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  .heading {
+    padding-left: 7rem;
+  }
+  .sentence {
+    font-size: 15px;
+    text-align: center;
+    padding-left: 7rem;
+    padding-right: 5rem;
+  }
+  .--flex-start {
+    display: flexbox;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-right: 9rem;
+  }
+  width: 50%;
+  & > * {
+    color: #fff;
+    margin-bottom: 2rem;
+    padding-left: 12rem;
+  }
+  & > h2 span {
+    display: block;
+  }
+  & .hero-buttons a {
+    color: #fff;
+  }
+}
+.hero-image {
+  z-index: 1;
+
+  width: 50%;
+  opacity: 0.6;
+  padding-right: 30rem;
+  margin-left: 25px;
+  margin-top: 60px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  .hero-image {
+    width: 100%;
+    &img {
+      width: 100%;
+    }
+  }
+}
